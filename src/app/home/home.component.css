@@ -1,0 +1,13 @@
+img{
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+}
+.paragraph{
+  font-size: 18pt;
+  word-wrap: normal;
+  font-family: 'Pacifico', cursive;/* 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif*/
+}
