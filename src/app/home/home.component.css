@@ -5,9 +5,22 @@ img{
   margin-top: 10px;
   margin-bottom: 10px;
   display: block;
+  opacity: 0.7;
 }
 .paragraph{
   font-size: 18pt;
   word-wrap: normal;
-  font-family: 'Pacifico', cursive;/* 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif*/
+  font-family: 'Pacifico', cursive;
+  text-shadow: 0px 0px 10px white;
+  text-align: left;
+}
+.address{
+  margin-top: 100px;
+  height: auto;
+}
+
+@media screen and (max-width: 700px){
+  .paragraph{
+    text-align: center;
+  }
 }

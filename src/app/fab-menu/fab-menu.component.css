@@ -1,0 +1,69 @@
+button[mat-fab] {
+  background-color: lightblue;
+  color: black;
+}
+
+button[mat-mini-fab] {
+  position: absolute;
+  left: 37px;
+}
+
+.fab-menu-body {
+  position: absolute;
+  top: 100px;
+  margin-left: 50px;
+  width: 200px;
+  height: 300px;
+  display: block;
+}
+
+mat-label {
+  position: absolute;
+  height: 20px;
+  width: 100px;
+  display: block;
+  padding: 5px 5px 5px 10px;
+  background-color: lightgray;
+  border-radius: 10px;
+  margin-top: 5px;
+  right: -10px;
+}
+
+mat-label:hover {
+  cursor: pointer;
+}
+.menu-item{
+  position: absolute;
+  left: 115px;
+}
+.menu-item-hidden{
+  display: none;
+}
+#menu-item-one {
+  bottom: 47px;
+  z-index: 1;
+}
+
+#menu-item-two {
+  bottom: 150px;
+  z-index: 1;
+}
+
+#menu-item-three {
+  bottom: 180px;
+  z-index: 1;
+}
+#menu-item-four {
+  bottom: 210px;
+  z-index: 1;
+}
+#menu-item-five {
+  bottom: 240px;
+  z-index: 1;
+}
+#menu-button {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  z-index: 2;
+}

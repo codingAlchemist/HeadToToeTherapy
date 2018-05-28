@@ -1,8 +1,15 @@
 a{
   color: fuchsia;
+  font-family: 'Pacifico', cursive;
 }
 a:active{
   color: fuchsia;
+  font-family: 'Pacifico', cursive;
+}
+a:hover{
+  color: fuchsia;
+  font-family: 'Pacifico', cursive;
+  text-shadow: 0px 0px 10px white;
 }
 .menu{
   width: 100%;
@@ -21,4 +28,11 @@ a:active{
 }
 .menu-item:hover{
   cursor: pointer;
+
+}
+
+@media screen and (max-width: 760px){
+  .menu{
+    display: none;
+  }
 }
