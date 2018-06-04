@@ -20,6 +20,11 @@ img {
     height: auto;
 }
 
+.large-centered-font {
+    font-size: 30pt;
+    text-align: center;
+}
+
 @media screen and (max-width: 760px) {
     img {
         margin-top: 80px;
