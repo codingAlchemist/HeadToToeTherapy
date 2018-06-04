@@ -78,7 +78,7 @@ export class FabMenuComponent implements OnInit {
   public label_state = 'in';
   public fab_item_state = 'up';
   public menu_button_state = 'straight';
-  @Input() buttonOneTitle  = '';
+  @Input() buttonOneTitle;
   @Input() buttonTwoTitle  = '';
   @Input() buttonThreeTitle  = '';
   @Input() buttonFourTitle  = '';

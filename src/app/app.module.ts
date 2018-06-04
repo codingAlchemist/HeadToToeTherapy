@@ -74,6 +74,7 @@ const routes: Routes = [
     MatButtonModule,
     BrowserModule,
     MatFormFieldModule,
+    MatSidenavModule,
     MatIconModule,
     BrowserAnimationsModule,
     NgbModule.forRoot(),
