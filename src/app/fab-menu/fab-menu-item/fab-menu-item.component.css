@@ -1,8 +1,7 @@
-
 button[mat-mini-fab] {
-  position: absolute;
-  position: absolute;
-  left: 115px;
+    position: absolute;
+    position: absolute;
+    left: 115px;
 }
 
 mat-label {
@@ -14,13 +13,13 @@ mat-label {
     background-color: lightgray;
     border-radius: 10px;
     margin-top: 5px;
-    left: -10px;
-  }
-  mat-label:hover {
-    cursor: pointer;
-  }
+}
 
-  .menu-item-body{
+mat-label:hover {
+    cursor: pointer;
+}
+
+.menu-item-body {
     width: 200px;
     height: 30px;
-  }
+}

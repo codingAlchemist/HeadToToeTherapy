@@ -52,6 +52,7 @@ import {
   MatTreeModule,
 } from '@angular/material';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { FabMenu2Component } from './fab-menu2/fab-menu2.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -69,6 +70,7 @@ const routes: Routes = [
     ContactComponent,
     FabMenuComponent,
     FabMenuItemComponent,
+    FabMenu2Component,
   ],
   imports: [
     MatButtonModule,

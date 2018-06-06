@@ -1,0 +1,20 @@
+<div class="fab-menu-body">
+    <div>
+        <button id="menu-button" class="fab-menu-button" mat-mini-fab aria-label="Menu" [@buttonRotationState]='menu_button_state' (click)='openMenu()'>
+          <mat-icon>add</mat-icon>
+        </button>
+    </div>
+    <div id="menu-item-one" class="menu-item" [@fabItemState]='fab_item_state'>
+        <mat-label [@labelState]="label_state">Home</mat-label>
+        <button id="menu-button-one" mat-mini-fab mat-icon-button></button>
+    </div>
+    <div id="menu-item-two" class="menu-item" [@fabItemState]='fab_item_state'>
+        <mat-label [@labelState]="label_state">About</mat-label>
+        <button id="menu-button-two" mat-mini-fab mat-icon-button></button>
+    </div>
+    <div id="menu-item-three" class="menu-item" [@fabItemState]='fab_item_state'>
+        <mat-label [@labelState]="label_state">Contact</mat-label>
+        <button id="menu-button-three" mat-mini-fab mat-icon-button></button>
+    </div>
+
+</div>

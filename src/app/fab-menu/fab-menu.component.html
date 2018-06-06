@@ -1,27 +1,27 @@
 <div class="fab-menu-body">
-  <div id="menu-item-one" *ngIf="buttonOneTitle" class="menu-item"  [@fabItem1State]="fab_item_state">
-    <mat-label (@labelState.done)="collapseItem($event)" [@labelState]="label_state">{{buttonOneTitle}}</mat-label>
-    <button id="menu-button-one" mat-mini-fab mat-icon-button (click)="button1Clicked(1)"></button>
-  </div>
-  <div id="menu-item-two" *ngIf="buttonTwoTitle" class="menu-item"  [@fabItem2State]="fab_item_state">
-    <mat-label [@labelState]="label_state">{{buttonTwoTitle}}</mat-label>
-    <button id="menu-button-two" mat-mini-fab mat-icon-button (click)="button2Clicked(2)"></button>
-  </div>
-  <div id="menu-item-three" *ngIf="buttonThreeTitle" class="menu-item" [@fabItem3State]="fab_item_state">
-    <mat-label  [@labelState]="label_state">{{buttonThreeTitle}}</mat-label>
-    <button id="menu-button-three" mat-mini-fab mat-icon-button (click)="button3Clicked(3)"></button>
-  </div>
-  <div id="menu-item-four" *ngIf="buttonFourTitle" class="menu-item"  [@fabItem4State]="fab_item_state">
-    <mat-label  [@labelState]="label_state">{{buttonFourTitle}}</mat-label>
-    <button id="menu-button-four" mat-mini-fab mat-icon-button></button>
-  </div>
-  <div id="menu-item-five" *ngIf="buttonFiveTitle" class="menu-item"  [@fabItem5State]="fab_item_state">
-    <mat-label  [@labelState]="label_state">{{buttonFiveTitle}}</mat-label>
-    <button id="menu-button-five" mat-mini-fab mat-icon-button></button>
-  </div>
-  <div>
-    <button [@buttonRotationState]='menu_button_state' id="menu-button" mat-fab aria-label="Menu" (click)='openMenu()'>
+    <div id="menu-item-one" class="menu-item" [@fabItem1State]="fab_item_state">
+        <mat-label (@labelState.done)="collapseItem($event)" [@labelState]="label_state">{{buttonOneTitle}}</mat-label>
+        <button id="menu-button-one" mat-mini-fab mat-icon-button (click)="button1Clicked(1)"></button>
+    </div>
+    <div id="menu-item-two" class="menu-item" [@fabItem2State]="fab_item_state">
+        <mat-label [@labelState]="label_state">{{buttonTwoTitle}}</mat-label>
+        <button id="menu-button-two" mat-mini-fab mat-icon-button (click)="button2Clicked(2)"></button>
+    </div>
+    <div id="menu-item-three" class="menu-item" [@fabItem3State]="fab_item_state">
+        <mat-label [@labelState]="label_state">{{buttonThreeTitle}}</mat-label>
+        <button id="menu-button-three" mat-mini-fab mat-icon-button (click)="button3Clicked(3)"></button>
+    </div>
+    <div id="menu-item-four" class="menu-item" [@fabItem4State]="fab_item_state">
+        <mat-label [@labelState]="label_state">{{buttonFourTitle}}</mat-label>
+        <button id="menu-button-four" mat-mini-fab mat-icon-button></button>
+    </div>
+    <div id="menu-item-five" class="menu-item" [@fabItem5State]="fab_item_state">
+        <mat-label [@labelState]="label_state">{{buttonFiveTitle}}</mat-label>
+        <button id="menu-button-five" mat-mini-fab mat-icon-button></button>
+    </div>
+    <div>
+        <button [@buttonRotationState]='menu_button_state' id="menu-button" mat-fab aria-label="Menu" (click)='openMenu()'>
       <mat-icon>add</mat-icon>
     </button>
-  </div>
+    </div>
 </div>
