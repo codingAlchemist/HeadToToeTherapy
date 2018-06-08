@@ -39,6 +39,7 @@ mat-label:hover {
 }
 
 .menu-item {
+    position: relative;
     display: block;
     z-index: 1;
 }

@@ -11,7 +11,7 @@ import {
   animate,
   transition,
 } from '@angular/animations';
-
+import {Router} from '@angular/router';
 @Component({
   selector: 'app-fab-menu2',
   templateUrl: './fab-menu2.component.html',
@@ -19,15 +19,15 @@ import {
   animations: [
     trigger('labelState', [
       state('out', style({
-        transform: 'scale(1, 1)',
+        transform: 'scale(0, 1)',
         'transform-origin': '0% 100%'
       })),
       state('in', style({
-        transform: 'scale(0,1)',
+        transform: 'scale(1,1)',
         'transform-origin': '0% 100%'
       })),
-      transition('out => in', animate('100ms ease-in')),
-      transition('in => out', animate('100ms ease-out'))
+      transition('out => in', animate('150ms ease-in')),
+      transition('in => out', animate('150ms ease-out'))
     ]),
     trigger('buttonRotationState', [
       state('rotated', style({
@@ -38,35 +38,60 @@ import {
         transform: 'rotate(0deg)',
         'transform-origin': '50% 50%'
       })),
-      transition('rotated => straight', animate('100ms ease-in')),
-      transition('straight => rotated', animate('100ms ease-out'))
+      transition('rotated => straight', animate('200ms ease-in')),
+      transition('straight => rotated', animate('200ms ease-out'))
     ]),
-    trigger('fabItemState', [
-      state('down', style({
-        position: 'absolute',
-        top: '-32px'
+    trigger('itemOneState', [
+      state('up', style({
+        transform: 'translateY(-100%)'
       })),
-      state('up', style ({
-        position: 'relative'
+      state('down', style ({
+        transform: 'translateY(0%)'
       })),
-      transition('down => up', animate('100ms ease-in')),
-      transition('up => down', animate('100ms ease-out'))
+      transition('down => up', animate('175ms ease-in')),
+      transition('up => down', animate('175ms ease-out'))
+    ]),
+    trigger('itemTwoState', [
+      state('up', style({
+        transform: 'translateY(-200%)'
+      })),
+      state('down', style ({
+        transform: 'translateY(0%)'
+      })),
+      transition('down => up', animate('300ms ease-in')),
+      transition('up => down', animate('300ms ease-out'))
+    ]),
+    trigger('itemThreeState', [
+      state('up', style({
+        transform: 'translateY(-300%)'
+      })),
+      state('down', style ({
+        transform: 'translateY(0%)'
+      })),
+      transition('down => up', animate('300ms ease-in')),
+      transition('up => down', animate('300ms ease-out'))
     ])
   ]
 })
 export class FabMenu2Component implements OnInit {
   public label_state = 'in';
-  public fab_item_state = 'down';
+  public fab_item_state = 'up';
   public menu_button_state = 'straight';
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
   openMenu() {
-    this.label_state = this.label_state === 'out' ? 'in' : 'out';
-    this.fab_item_state = this.fab_item_state === 'up' ? 'down' : 'up';
     this.menu_button_state = this.menu_button_state === 'rotated' ? 'straight' : 'rotated';
-    console.log('expanding');
+    this.fab_item_state = this.fab_item_state === 'up' ? 'down' : 'up';
+
+  }
+  showLabels() {
+    console.log('label state' + this.label_state );
+    this.label_state =  this.label_state === 'out' ? 'in' : 'out';
+  }
+  NavigateTo(destination: string) {
+    this.router.navigate([destination]);
   }
 }

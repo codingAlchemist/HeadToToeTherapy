@@ -11,8 +11,6 @@ import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
-import { FabMenuComponent } from './fab-menu/fab-menu.component';
-import { FabMenuItemComponent } from './fab-menu/fab-menu-item/fab-menu-item.component';
 import {
   MatAutocompleteModule,
   MatBadgeModule,
@@ -68,8 +66,6 @@ const routes: Routes = [
     MenuComponent,
     AboutComponent,
     ContactComponent,
-    FabMenuComponent,
-    FabMenuItemComponent,
     FabMenu2Component,
   ],
   imports: [
