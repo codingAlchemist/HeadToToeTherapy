@@ -7,10 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { MenuComponent } from './menu/menu.component';
-import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
+
 import {
   MatAutocompleteModule,
   MatBadgeModule,
@@ -50,13 +47,22 @@ import {
   MatTreeModule,
 } from '@angular/material';
 import {MatFormFieldModule} from '@angular/material/form-field';
+
 import { FabMenu2Component } from './fab-menu2/fab-menu2.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { HomeComponent } from './home/home.component';
+import { MenuComponent } from './menu/menu.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { ServicesComponent } from './services/services.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
   {path: 'about', component: AboutComponent},
-  {path: 'contact', component: ContactComponent}
+  {path: 'contact', component: ContactComponent},
+  {path: 'testimonials', component: TestimonialsComponent},
+  {path: 'servoces', component: ServicesComponent}
 ];
 
 @NgModule({
@@ -67,6 +73,8 @@ const routes: Routes = [
     AboutComponent,
     ContactComponent,
     FabMenu2Component,
+    TestimonialsComponent,
+    ServicesComponent,
   ],
   imports: [
     MatButtonModule,

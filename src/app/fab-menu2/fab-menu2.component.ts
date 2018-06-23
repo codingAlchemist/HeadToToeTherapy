@@ -17,18 +17,6 @@ import {Router} from '@angular/router';
   templateUrl: './fab-menu2.component.html',
   styleUrls: ['./fab-menu2.component.css'],
   animations: [
-    trigger('labelState', [
-      state('out', style({
-        transform: 'scale(0, 1)',
-        'transform-origin': '0% 100%'
-      })),
-      state('in', style({
-        transform: 'scale(1,1)',
-        'transform-origin': '0% 100%'
-      })),
-      transition('out => in', animate('150ms ease-in')),
-      transition('in => out', animate('150ms ease-out'))
-    ]),
     trigger('buttonRotationState', [
       state('rotated', style({
         transform: 'rotate(-45deg)',
@@ -38,44 +26,24 @@ import {Router} from '@angular/router';
         transform: 'rotate(0deg)',
         'transform-origin': '50% 50%'
       })),
-      transition('rotated => straight', animate('200ms ease-in')),
-      transition('straight => rotated', animate('200ms ease-out'))
+      transition('rotated => straight', animate('100ms ease-in')),
+      transition('straight => rotated', animate('100ms ease-out'))
     ]),
-    trigger('itemOneState', [
-      state('up', style({
-        transform: 'translateY(-100%)'
+    trigger('itemShownState', [
+      state('shown', style({
+        display: 'block'
       })),
-      state('down', style ({
-        transform: 'translateY(0%)'
+      state('hidden', style({
+        display: 'none'
       })),
-      transition('down => up', animate('175ms ease-in')),
-      transition('up => down', animate('175ms ease-out'))
-    ]),
-    trigger('itemTwoState', [
-      state('up', style({
-        transform: 'translateY(-200%)'
-      })),
-      state('down', style ({
-        transform: 'translateY(0%)'
-      })),
-      transition('down => up', animate('300ms ease-in')),
-      transition('up => down', animate('300ms ease-out'))
-    ]),
-    trigger('itemThreeState', [
-      state('up', style({
-        transform: 'translateY(-300%)'
-      })),
-      state('down', style ({
-        transform: 'translateY(0%)'
-      })),
-      transition('down => up', animate('300ms ease-in')),
-      transition('up => down', animate('300ms ease-out'))
+      transition('shown => hidden', animate('100ms ease-in')),
+      transition('hidden => shown', animate('100ms ease-out'))
     ])
   ]
 })
 export class FabMenu2Component implements OnInit {
   public label_state = 'in';
-  public fab_item_state = 'up';
+  public fab_item_state = 'hidden';
   public menu_button_state = 'straight';
   constructor(private router: Router) { }
 
@@ -84,7 +52,7 @@ export class FabMenu2Component implements OnInit {
 
   openMenu() {
     this.menu_button_state = this.menu_button_state === 'rotated' ? 'straight' : 'rotated';
-    this.fab_item_state = this.fab_item_state === 'up' ? 'down' : 'up';
+    this.fab_item_state = this.fab_item_state === 'hidden' ? 'shown' : 'hidden';
 
   }
   showLabels() {

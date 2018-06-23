@@ -4,17 +4,34 @@
           <mat-icon>add</mat-icon>
         </button>
     </div>
-    <div id="menu-item-one" class="menu-item" [@itemOneState]='fab_item_state' (@itemOneState.done)='showLabels()'>
-        <mat-label [@labelState]="label_state">Home</mat-label>
-        <button id="menu-button-one" mat-mini-fab mat-icon-button (click)="NavigateTo('home')"></button>
+    <div id="menu-item-one" class="menu-item" [@itemShownState]='fab_item_state'>
+        <mat-label>Home</mat-label>
+        <button id="menu-button-one" mat-mini-fab mat-icon-button (click)="NavigateTo('home')">
+          <mat-icon>sentiment_satisfied_alt</mat-icon>
+        </button>
     </div>
-    <div id="menu-item-two" class="menu-item" [@itemTwoState]='fab_item_state'>
-        <mat-label [@labelState]="label_state">About</mat-label>
-        <button id="menu-button-two" mat-mini-fab mat-icon-button (click)="NavigateTo('about')"></button>
+    <div id="menu-item-two" class="menu-item" [@itemShownState]='fab_item_state'>
+        <mat-label>About</mat-label>
+        <button id="menu-button-two" mat-mini-fab mat-icon-button (click)="NavigateTo('about')">
+          <mat-icon>info</mat-icon>
+        </button>
     </div>
-    <div id="menu-item-three" class="menu-item" [@itemThreeState]='fab_item_state'>
-        <mat-label [@labelState]="label_state">Contact</mat-label>
-        <button id="menu-button-three" mat-mini-fab mat-icon-button (click)="NavigateTo('contact')"></button>
+    <div id="menu-item-three" class="menu-item" [@itemShownState]='fab_item_state'>
+        <mat-label>Testimonials</mat-label>
+        <button id="menu-button-three" mat-mini-fab mat-icon-button (click)="NavigateTo('testimonials')">
+          <mat-icon>comment</mat-icon>
+        </button>
     </div>
-
+    <div id="menu-item-four" class="menu-item" [@itemShownState]='fab_item_state'>
+        <mat-label>Contact</mat-label>
+        <button id="menu-button-four" mat-mini-fab mat-icon-button (click)="NavigateTo('contact')">
+          <mat-icon>contact_mail</mat-icon>
+        </button>
+    </div>
+    <div id="menu-item-five" class="menu-item" [@itemShownState]='fab_item_state'>
+        <mat-label>Services</mat-label>
+        <button id="menu-button-five" mat-mini-fab mat-icon-button (click)="NavigateTo('servies')">
+          <mat-icon>spa</mat-icon>
+        </button>
+    </div>
 </div>
