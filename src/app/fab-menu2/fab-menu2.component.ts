@@ -45,15 +45,17 @@ export class FabMenu2Component implements OnInit {
   public label_state = 'in';
   public fab_item_state = 'hidden';
   public menu_button_state = 'straight';
+  @Output() onMenuButtonPressed: EventEmitter<any> = new EventEmitter();
+
   constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
   openMenu() {
-    this.menu_button_state = this.menu_button_state === 'rotated' ? 'straight' : 'rotated';
-    this.fab_item_state = this.fab_item_state === 'hidden' ? 'shown' : 'hidden';
-
+    //this.menu_button_state = this.menu_button_state === 'rotated' ? 'straight' : 'rotated';
+    //this.fab_item_state = this.fab_item_state === 'hidden' ? 'shown' : 'hidden';
+    this.onMenuButtonPressed.emit("menuButtonPressed");
   }
   showLabels() {
     console.log('label state' + this.label_state );
