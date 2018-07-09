@@ -37,9 +37,6 @@
         <div class="item-5 menu-item">
             <a routerLink="/services">Services</a>
         </div>
-        <div class="menu-item">
-            Close
-        </div>
     </div>
 </div>
-<app-fab-menu2></app-fab-menu2>
+<app-fab-menu2 (onMenuButtonPressed)="openMenu($event)"></app-fab-menu2>

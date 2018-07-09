@@ -3,16 +3,26 @@ button[mat-mini-fab] {
 }
 
 .fab-menu-button {
-    background-color: olive !important;
+    background-color: whitesmoke !important;
     color: black;
     position: relative;
     z-index: 2;
 }
 
-.fab-menu-body {
+
+/* .fab-menu-body {
     position: fixed;
     width: 200px;
     height: 300px;
+    display: block;
+    top: 60px;
+    left: 30px
+} */
+
+.fab-menu-body {
+    position: fixed;
+    width: 40px;
+    height: 40px;
     display: block;
     top: 60px;
     left: 30px

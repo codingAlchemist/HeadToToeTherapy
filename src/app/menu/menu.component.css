@@ -1,16 +1,16 @@
     a {
         color: fuchsia;
-        font-family: 'Pacifico', cursive;
+        font-family: 'Luminari', fantasy;
     }
     
     a:active {
         color: fuchsia;
-        font-family: 'Pacifico', cursive;
+        font-family: 'Luminari', fantasy;
     }
     
     a:hover {
         color: fuchsia;
-        font-family: 'Pacifico', cursive;
+        font-family: 'Luminari', fantasy;
         text-shadow: 0px 0px 10px white;
     }
     
@@ -18,6 +18,8 @@
         width: 100%;
         height: 50px;
         margin-top: 10px;
+        z-index: 1;
+        position: relative;
     }
     
     .menu-item {
@@ -28,7 +30,12 @@
         text-align: center;
         padding-top: 5px;
         padding-bottom: 5px;
-        font-family: 'Lucida Sans';
+        font-family: 'Luminari', fantasy;
+    }
+    
+    app-fab-menu2 {
+        position: relative;
+        z-index: 1;
     }
     
     .menu-item:hover {
@@ -58,15 +65,16 @@
             position: fixed;
             top: 0px;
             left: 0px;
+            z-index: 1;
         }
         .mobile-menu .menu-body {
             width: 300px;
             height: 100%;
             background-color: aliceblue;
-            position: absolute;
+            position: fixed;
             left: 0px;
             top: 80px;
-            z-index: 0;
+            z-index: 1;
             display: block;
         }
         .mobile-menu-bar-button {
@@ -84,19 +92,18 @@
             text-align: center;
             padding-top: 5px;
             padding-bottom: 5px;
-            font-family: 'Lucida Sans';
+            font-family: 'Luminari', fantasy;
             border: 1px solid black;
         }
         .mobile-menu-title {
-            font-size: 23pt;
+            font-size: 30pt;
             width: 100%;
             height: 40px;
             top: 10px;
             display: block;
             position: relative;
             text-align: center;
-            color: black;
-            font-family: 'Pacifico', cursive;
-            text-shadow: 0px 0px 10px white;
+            color: rgb(196, 183, 183);
+            text-shadow: 0px 3px 5px rgb(255, 215, 130);
         }
     }

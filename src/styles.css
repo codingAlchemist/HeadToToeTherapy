@@ -2,14 +2,26 @@
 
 @import 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css';
 html {
-    background: -moz-linear-gradient(top, #1c2307 0%, #ffe7b7 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #1c2307 0%, #ffe7b7 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #1c2307 0%, #ffe7b7 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: url("./assets/images/candles-opaque.jpg");
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     min-height: 100%;
+}
+
+img[src="./assets/images/candles-opque.jpg"] {
+    width: 100%;
+    height: 200%;
+    opacity: 0.7;
+    position: absolute;
+    left: 0%;
+    background: no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    z-index: 0;
+    top: 0px;
 }
 
 .container {
@@ -41,7 +53,6 @@ h1 {
     display: block;
     text-align: center;
     color: black;
-    font-family: 'Pacifico';
     text-shadow: 0px 0px 10px white;
 }
 
@@ -57,9 +68,11 @@ img {
 p {
     font-size: 18pt;
     word-wrap: normal;
-    font-family: 'Pacifico';
-    text-shadow: 0px 0px 10px white;
+    color: black;
     text-align: left;
+    font-weight: bold;
+    font-family: 'Luminari', fantasy;
+    text-shadow: 2px 2px 5px white;
 }
 
 .address {
@@ -67,19 +80,19 @@ p {
     height: auto;
 }
 
-.large-centered-font {
-    font-size: 30pt;
-    text-align: center;
-}
-
 .paragraph-title {
     font-size: 20pt;
     word-wrap: normal;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Luminari', fantasy;
     text-shadow: 0px 0px 10px white;
     text-align: left;
     text-decoration: underline;
     margin-bottom: 10px;
+}
+
+.main-content {
+    position: relative;
+    z-index: 0;
 }
 
 @media screen and (max-width: 760px) {
@@ -106,20 +119,21 @@ p {
     }
     p {
         text-align: center;
-        font-size: 13pt;
+        font-size: 18pt;
+        font-family: 'Luminari', fantasy;
     }
     .paragraph-title {
-        font-size: 18pt;
+        font-size: 30pt;
         word-wrap: normal;
-        font-family: 'Pacifico', cursive;
-        text-shadow: 0px 0px 10px white;
+        font-family: 'Luminari', fantasy;
+        text-shadow: 0px 0px 10px pink;
         text-align: center;
         text-decoration: underline;
         margin-bottom: 10px;
     }
     .main-content {
         height: 100%;
-        margin-top: 10%;
+        margin-top: 20%;
     }
 }
 
