@@ -3,7 +3,6 @@
 @import 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css';
 html {
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    background: url("./assets/images/candles-opaque.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     min-height: 100%;
@@ -72,7 +71,6 @@ p {
     text-align: left;
     font-weight: bold;
     font-family: 'Luminari', fantasy;
-    text-shadow: 2px 2px 5px white;
 }
 
 .address {
@@ -100,7 +98,7 @@ p {
 }
 
 @media screen and (max-width: 760px) {
-    .title {
+    #title_logo {
         display: none;
     }
     .body-overlay {

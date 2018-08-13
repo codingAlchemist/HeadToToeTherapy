@@ -54,16 +54,16 @@ import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
-import { ServicesComponent } from './services/services.component';
 import { MassagesComponent } from './massages/massages.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: '/home', pathMatch: 'full'},
+  // {path: '', redirectTo: '/home', pathMatch: 'full'},
+  {path: '', component: HomeComponent, pathMatch: 'full'},
+  {path: '**', redirectTo: ''},
   {path: 'home', component: HomeComponent},
   {path: 'about', component: AboutComponent},
   {path: 'contact', component: ContactComponent},
   {path: 'testimonials', component: TestimonialsComponent},
-  {path: 'services', component: ServicesComponent},
   {path: 'massages', component: MassagesComponent}
 ];
 
@@ -76,7 +76,6 @@ const routes: Routes = [
     ContactComponent,
     FabMenu2Component,
     TestimonialsComponent,
-    ServicesComponent,
     MassagesComponent,
   ],
   imports: [

@@ -53,7 +53,7 @@ export class FabMenu2Component implements OnInit {
   }
 
   openMenu() {
-    this.menu_button_state = this.menu_button_state === 'rotated' ? 'straight' : 'rotated';
+    //this.menu_button_state = this.menu_button_state === 'rotated' ? 'straight' : 'rotated';
     //this.fab_item_state = this.fab_item_state === 'hidden' ? 'shown' : 'hidden';
     this.onMenuButtonPressed.emit("menuButtonPressed");
   }
