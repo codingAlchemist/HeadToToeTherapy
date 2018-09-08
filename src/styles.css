@@ -23,7 +23,7 @@ img[src="./assets/images/candles-opque.jpg"] {
     top: 0px;
 }
 
-.temp {
+.alert {
     border: 1px solid black;
     background: yellow;
     border-radius: 5px;
