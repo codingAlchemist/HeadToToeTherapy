@@ -1,0 +1,7 @@
+.temp {
+    border: 1px solid black;
+    background: yellow;
+    border-radius: 5px;
+    padding: 2px;
+    text-align: center;
+}

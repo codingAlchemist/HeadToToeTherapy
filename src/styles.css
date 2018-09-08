@@ -44,6 +44,11 @@ h1 {
     text-align: center;
 }
 
+.price-ast {
+    font-weight: bold;
+    color: brown;
+}
+
 .title {
     font-size: 4em;
     width: 100%;

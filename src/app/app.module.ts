@@ -55,11 +55,11 @@ import { MenuComponent } from './menu/menu.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { MassagesComponent } from './massages/massages.component';
+import { BodyWrapsComponent } from './body-wraps/body-wraps.component';
 
 const routes: Routes = [
-  // {path: '', redirectTo: '/home', pathMatch: 'full'},
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: '', component: HomeComponent, pathMatch: 'full'},
-  {path: '**', redirectTo: ''},
   {path: 'home', component: HomeComponent},
   {path: 'about', component: AboutComponent},
   {path: 'contact', component: ContactComponent},
@@ -77,6 +77,7 @@ const routes: Routes = [
     FabMenu2Component,
     TestimonialsComponent,
     MassagesComponent,
+    BodyWrapsComponent,
   ],
   imports: [
     MatButtonModule,
