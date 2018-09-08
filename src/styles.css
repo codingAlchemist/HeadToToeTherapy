@@ -23,6 +23,14 @@ img[src="./assets/images/candles-opque.jpg"] {
     top: 0px;
 }
 
+.temp {
+    border: 1px solid black;
+    background: yellow;
+    border-radius: 5px;
+    padding: 2px;
+    text-align: center;
+}
+
 .container {
     background-color: transparent;
 }
