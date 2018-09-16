@@ -1,0 +1,9 @@
+@media screen and (max-width: 760px) {
+    .paypal {
+        width: 100px;
+        height: 30px;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+}
