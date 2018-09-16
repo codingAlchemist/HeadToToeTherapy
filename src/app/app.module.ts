@@ -56,6 +56,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { MassagesComponent } from './massages/massages.component';
 import { BodyWrapsComponent } from './body-wraps/body-wraps.component';
+import { PackagesComponent } from './packages/packages.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -64,7 +65,8 @@ const routes: Routes = [
   {path: 'about', component: AboutComponent},
   {path: 'contact', component: ContactComponent},
   {path: 'testimonials', component: TestimonialsComponent},
-  {path: 'massages', component: MassagesComponent}
+  {path: 'massages', component: MassagesComponent},
+  {path: 'packages', component: PackagesComponent}
 ];
 
 @NgModule({
@@ -78,6 +80,7 @@ const routes: Routes = [
     TestimonialsComponent,
     MassagesComponent,
     BodyWrapsComponent,
+    PackagesComponent,
   ],
   imports: [
     MatButtonModule,

@@ -59,13 +59,13 @@ mat-label:hover {
     display: none;
 }
 
-@media screen and (max-width:760px) {
+@media screen and (max-width:770px) {
     .fab-menu-body {
         display: block;
     }
 }
 
-@media screen and (min-width:760px) {
+@media screen and (min-width:770px) {
     .fab-menu-body {
         display: none;
     }

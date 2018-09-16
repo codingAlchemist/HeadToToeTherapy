@@ -34,7 +34,7 @@
         width: 20%;
         height: 100%;
         float: left;
-        font-size: 18pt;
+        font-size: 15pt;
         text-align: center;
         padding-top: 5px;
         padding-bottom: 5px;
@@ -50,7 +50,7 @@
         cursor: pointer;
     }
     
-    @media screen and (min-width: 760px) {
+    @media screen and (min-width: 770px) {
         .menu {
             display: block;
         }
@@ -59,7 +59,7 @@
         }
     }
     
-    @media screen and (max-width: 760px) {
+    @media screen and (max-width: 770px) {
         .arrow_icon {
             position: relative;
             top: -35px;
