@@ -66,6 +66,7 @@ const routes: Routes = [
   {path: 'contact', component: ContactComponent},
   {path: 'testimonials', component: TestimonialsComponent},
   {path: 'massages', component: MassagesComponent},
+  {path: 'body-wraps', component: BodyWrapsComponent},
   {path: 'packages', component: PackagesComponent}
 ];
 
