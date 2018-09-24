@@ -23,7 +23,7 @@ export class MenuComponent implements OnInit {
   public drawer_state = 'closed';
   public submenu4;
   public hidden_state = {display: 'none'}
-  public shown_state = {display: 'block'}
+  public shown_state = {display: 'block', 'padding-left':'10px'}
   constructor() { }
 
   ngOnInit() {
@@ -31,8 +31,6 @@ export class MenuComponent implements OnInit {
 
   openMenu($event) {
     this.drawer_state = this.drawer_state === 'open' ? 'closed' : 'open';
-    console.log('hit button');
-
   }
 
   showSubmenu(menuShown: number){
