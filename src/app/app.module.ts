@@ -67,8 +67,9 @@ const routes: Routes = [
   {path: 'contact', component: ContactComponent},
   {path: 'testimonials', component: TestimonialsComponent},
   {path: 'massages', component: MassagesComponent},
-  {path: 'packages', component: PackagesComponent},
-  {path: 'waxing', component: WaxingComponent}
+  {path: 'waxing', component: WaxingComponent},
+  {path: 'body-wraps', component: BodyWrapsComponent},
+  {path: 'packages', component: PackagesComponent}
 ];
 
 @NgModule({

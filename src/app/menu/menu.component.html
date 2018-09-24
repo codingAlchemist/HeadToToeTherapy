@@ -16,7 +16,7 @@
             Services
             <div [ngStyle]="submenu4 === 1 ? shown_state : hidden_state">
                 <div><a routerLink="/massages">Massages</a></div>
-                <div>Body Wraps</div>
+                <div><a routerLink="/body-wraps">Body Wraps</a></div>
                 <div>Reiki</div>
                 <div><a routerLink="/massages">Waxing</a></div>
             </div>
@@ -54,7 +54,7 @@
 
             <div [ngStyle]="submenu4 === 1 ? shown_state : hidden_state">
                 <div (click)="openMenu($event)"><a routerLink="/massages">Massages</a></div>
-                <div>Body Wraps</div>
+                <div (click)="openMenu($event)"><a routerLink="/body-wraps">Body Wraps</a></div>
                 <div>Reiki</div>
                 <div (click)="openMenu($event)"><a routerLink="/massages">Waxing</a></div>
                 <div (click)="openMenu($event)">><a routerLink="/packages">Packages</a></div>
