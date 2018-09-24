@@ -57,6 +57,7 @@ import { ContactComponent } from './contact/contact.component';
 import { MassagesComponent } from './massages/massages.component';
 import { BodyWrapsComponent } from './body-wraps/body-wraps.component';
 import { PackagesComponent } from './packages/packages.component';
+import { WaxingComponent } from './waxing/waxing.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -66,7 +67,8 @@ const routes: Routes = [
   {path: 'contact', component: ContactComponent},
   {path: 'testimonials', component: TestimonialsComponent},
   {path: 'massages', component: MassagesComponent},
-  {path: 'packages', component: PackagesComponent}
+  {path: 'packages', component: PackagesComponent},
+  {path: 'waxing', component: WaxingComponent}
 ];
 
 @NgModule({
@@ -81,6 +83,7 @@ const routes: Routes = [
     MassagesComponent,
     BodyWrapsComponent,
     PackagesComponent,
+    WaxingComponent,
   ],
   imports: [
     MatButtonModule,
