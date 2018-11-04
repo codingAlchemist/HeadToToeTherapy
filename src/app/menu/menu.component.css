@@ -9,7 +9,7 @@
     }
     
     a:hover {
-        color: fuchsia;
+        color: aqua;
         font-family: 'Luminari', fantasy;
         text-shadow: 0px 0px 10px white;
     }
@@ -25,6 +25,7 @@
     app-fab-menu2 {
         position: relative;
         z-index: 1;
+        right: 30px;
     }
     
     .menu-item:hover {
@@ -34,11 +35,11 @@
     @media screen and (min-width: 770px) {
         .menu {
             width: 100%;
-            height: 200px;
-            margin-top: 10px;
+            height: 50px;
             z-index: 1;
             position: relative;
             display: block;
+            margin-bottom: 30px;
         }
         .menu-item {
             width: 20%;

@@ -58,6 +58,8 @@ import { MassagesComponent } from './massages/massages.component';
 import { BodyWrapsComponent } from './body-wraps/body-wraps.component';
 import { PackagesComponent } from './packages/packages.component';
 import { WaxingComponent } from './waxing/waxing.component';
+import { GiftCertificateComponent } from './gift-certificate/gift-certificate.component';
+import { ServicesComponent } from './services/services.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -69,7 +71,8 @@ const routes: Routes = [
   {path: 'massages', component: MassagesComponent},
   {path: 'waxing', component: WaxingComponent},
   {path: 'body-wraps', component: BodyWrapsComponent},
-  {path: 'packages', component: PackagesComponent}
+  {path: 'packages', component: PackagesComponent},
+  {path: 'services', component: ServicesComponent}
 ];
 
 @NgModule({
@@ -85,6 +88,8 @@ const routes: Routes = [
     BodyWrapsComponent,
     PackagesComponent,
     WaxingComponent,
+    GiftCertificateComponent,
+    ServicesComponent,
   ],
   imports: [
     MatButtonModule,
@@ -92,6 +97,8 @@ const routes: Routes = [
     MatFormFieldModule,
     MatSidenavModule,
     MatIconModule,
+    MatTabsModule,
+    MatExpansionModule,
     BrowserAnimationsModule,
     NgbModule.forRoot(),
     RouterModule.forRoot(routes)

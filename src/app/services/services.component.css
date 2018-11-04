@@ -1,0 +1,19 @@
+mat-panel-title {
+    color: white;
+    font-size: 18pt;
+}
+
+mat-panel-description {
+    color: white;
+    font-size: 17pt;
+}
+
+@media screen and (min-width: 770px) {}
+
+@media screen and (max-width: 770px) {
+    mat-tab-group {
+        height: 50px;
+        margin-top: 50px;
+        width: 100%;
+    }
+}
