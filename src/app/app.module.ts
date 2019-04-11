@@ -60,19 +60,21 @@ import { PackagesComponent } from './packages/packages.component';
 import { WaxingComponent } from './waxing/waxing.component';
 import { GiftCertificateComponent } from './gift-certificate/gift-certificate.component';
 import { ServicesComponent } from './services/services.component';
+import { FacialsComponent } from './facials/facials.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: '', component: HomeComponent, pathMatch: 'full'},
-  {path: 'home', component: HomeComponent},
-  {path: 'about', component: AboutComponent},
-  {path: 'contact', component: ContactComponent},
-  {path: 'testimonials', component: TestimonialsComponent},
+  {path: 'home', component: HomeComponent, pathMatch: 'full'},
+  {path: 'about', component: AboutComponent, pathMatch: 'full'},
+  {path: 'contact', component: ContactComponent, pathMatch: 'full'},
+  {path: 'testimonials', component: TestimonialsComponent, pathMatch: 'full'},
   {path: 'massages', component: MassagesComponent},
   {path: 'waxing', component: WaxingComponent},
   {path: 'body-wraps', component: BodyWrapsComponent},
   {path: 'packages', component: PackagesComponent},
-  {path: 'services', component: ServicesComponent}
+  {path: 'services', component: ServicesComponent},
+  {path: 'facials', component: FacialsComponent}
 ];
 
 @NgModule({
@@ -90,6 +92,7 @@ const routes: Routes = [
     WaxingComponent,
     GiftCertificateComponent,
     ServicesComponent,
+    FacialsComponent,
   ],
   imports: [
     MatButtonModule,
