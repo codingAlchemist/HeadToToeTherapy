@@ -1,120 +1,123 @@
+a:active {
+    color: fuchsia;
+    font-family: 'Luminari', fantasy;
+}
+
+a:hover {
+    color: rgb(0, 140, 255);
+    font-family: 'Luminari', fantasy;
+    text-shadow: 0px 0px 10px white;
+}
+
+.sub-menu {
+    display: none;
+}
+
+.sub-menu:hover {
+    display: block;
+}
+
+app-fab-menu2 {
+    position: relative;
+    z-index: 1;
+    right: 30px;
+}
+
+.menu-item:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 770px) {
+    a {
+        color: beige;
+        font-family: 'Luminari', fantasy;
+    }
+    .menu {
+        width: 100%;
+        height: 50px;
+        z-index: 1;
+        position: relative;
+        display: block;
+        margin-bottom: 30px;
+    }
+    .menu-item {
+        width: 20%;
+        height: 100%;
+        float: left;
+        font-size: 20pt;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-family: 'tahoma', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .mobile-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 770px) {
     a {
         color: black;
         font-family: 'Luminari', fantasy;
     }
-    
-    a:active {
-        color: fuchsia;
-        font-family: 'Luminari', fantasy;
+    .arrow_icon {
+        position: relative;
+        top: -32px;
+        left: 95px;
     }
-    
-    a:hover {
-        color: aqua;
-        font-family: 'Luminari', fantasy;
-        text-shadow: 0px 0px 10px white;
-    }
-    
-    .sub-menu {
+    .menu {
         display: none;
     }
-    
-    .sub-menu:hover {
+    .mobile-menu {
         display: block;
     }
-    
-    app-fab-menu2 {
-        position: relative;
+    .mobile-menu-bar {
+        background-color: black;
+        width: 100%;
+        height: 80px;
+        position: fixed;
+        top: 0px;
+        left: 0px;
         z-index: 1;
-        right: 30px;
     }
-    
-    .menu-item:hover {
-        cursor: pointer;
+    .mobile-menu .menu-body {
+        width: 300px;
+        height: 100%;
+        background-color: aliceblue;
+        position: fixed;
+        left: 0px;
+        top: 80px;
+        z-index: 1;
+        display: block;
     }
-    
-    @media screen and (min-width: 770px) {
-        .menu {
-            width: 100%;
-            height: 50px;
-            z-index: 1;
-            position: relative;
-            display: block;
-            margin-bottom: 30px;
-        }
-        .menu-item {
-            width: 20%;
-            height: 100%;
-            float: left;
-            font-size: 20pt;
-            text-align: center;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            font-family: 'Luminari', fantasy;
-        }
-        .mobile-menu {
-            display: none;
-        }
+    .mobile-menu-bar-button {
+        width: 100px;
+        height: 100%;
+        color: white;
+        background-color: lightgray;
+        display: none;
     }
-    
-    @media screen and (max-width: 770px) {
-        .arrow_icon {
-            position: relative;
-            top: -32px;
-            left: 95px;
-        }
-        .menu {
-            display: none;
-        }
-        .mobile-menu {
-            display: block;
-        }
-        .mobile-menu-bar {
-            background-color: black;
-            width: 100%;
-            height: 80px;
-            position: fixed;
-            top: 0px;
-            left: 0px;
-            z-index: 1;
-        }
-        .mobile-menu .menu-body {
-            width: 300px;
-            height: 100%;
-            background-color: aliceblue;
-            position: fixed;
-            left: 0px;
-            top: 80px;
-            z-index: 1;
-            display: block;
-        }
-        .mobile-menu-bar-button {
-            width: 100px;
-            height: 100%;
-            color: white;
-            background-color: lightgray;
-            display: none;
-        }
-        .menu-item {
-            float: none;
-            width: 100%;
-            height: 40px;
-            font-size: 18pt;
-            text-align: left;
-            padding-top: 5px;
-            padding-left: 10px;
-            padding-bottom: 5px;
-            font-family: 'Luminari', fantasy;
-            border: 1px solid black;
-        }
-        .mobile-menu-title {
-            font-size: 30pt;
-            width: 100%;
-            height: 40px;
-            top: 10px;
-            display: block;
-            position: relative;
-            text-align: center;
-            color: rgb(196, 183, 183);
-            text-shadow: 0px 3px 5px rgb(255, 215, 130);
-        }
+    .menu-item {
+        float: none;
+        width: 100%;
+        height: 40px;
+        font-size: 18pt;
+        text-align: left;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-bottom: 5px;
+        font-family: 'tahoma', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border: 1px solid black;
     }
+    .mobile-menu-title {
+        font-size: 30pt;
+        width: 100%;
+        height: 40px;
+        top: 10px;
+        display: block;
+        position: relative;
+        text-align: center;
+        color: rgb(196, 183, 183);
+        text-shadow: 0px 3px 5px rgb(255, 215, 130);
+    }
+}

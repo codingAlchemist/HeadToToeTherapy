@@ -42,7 +42,7 @@ h1 {
 
 .price-ast {
     font-weight: bold;
-    color: brown;
+    color: red;
 }
 
 .title {
@@ -62,7 +62,6 @@ p {
     color: black;
     text-align: left;
     font-family: 'tahoma', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: beige;
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -111,6 +110,7 @@ p mat-panal-title {
     .main-content {
         position: relative;
         z-index: 0;
+        background-color: bisque;
     }
     #title_logo {
         display: none;
@@ -157,6 +157,8 @@ p mat-panal-title {
     .main-content {
         position: relative;
         z-index: 0;
+        background-color: whitesmoke;
+        border-radius: 10px;
     }
     #title_logo {
         width: 100%;
